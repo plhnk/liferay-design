@@ -1,8 +1,6 @@
 # WeDeploy Hosting Tutorial
 
-This template will help you through the process of deploying a WeDeploy Hosting container.
+This template will help you through the process of deploying a project with static files on WeDeploy.
 
-> [Visit the tutorial to learn how to start hosting static files.](https://wedeploy.com/tutorials/hosting/)
-
-
+> [Visit the tutorial to learn how to start hosting on WeDeploy.](https://wedeploy.com/tutorials/hosting/)
 
