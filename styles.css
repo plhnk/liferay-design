@@ -1,26 +1,17 @@
 body {
     font-family: Source Sans Pro, Tahoma, sans-serif;
-    font-size: 20px;
 }
 
 .ddl-form-basic-info {
-    max-width: 600px;
+    max-width: 660px;
     margin: 0 auto;
 }
 
 .container-fluid-1280.ddl-form-builder-app {
-    max-width: 600px;
+    max-width: 660px;
 }
 
 .icon-asterisk.text-warning {
     font-size: .4em;
     vertical-align: text-top;
-}
-
-label {
-	font-size: 1em;
-}
-
-h3.lfr-ddm-form-page-title {
-	font-size: 1.6em;
 }
