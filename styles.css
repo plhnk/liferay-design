@@ -9,9 +9,14 @@ body {
 
 .container-fluid-1280.ddl-form-builder-app {
     max-width: 660px;
+    padding-bottom: 30vh;
 }
 
 .icon-asterisk.text-warning {
     font-size: .4em;
     vertical-align: text-top;
+}
+
+.btn.btn-lg.btn-primary.lfr-ddm-form-submit.pull-right {
+    width: 100%;
 }
