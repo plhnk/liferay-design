@@ -1,0 +1,21 @@
+body {
+    font-family: Source Sans Pro;
+}
+
+h1 {
+	color: red;
+}
+
+.ddl-form-basic-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-fluid-1280.ddl-form-builder-app {
+    max-width: 600px;
+}
+
+.icon-asterisk.text-warning {
+    font-size: .4em;
+    vertical-align: text-top;
+}
