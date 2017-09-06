@@ -20,3 +20,9 @@ body {
 .btn.btn-lg.btn-primary.lfr-ddm-form-submit.pull-right {
     width: 100%;
 }
+
+div#yui_patched_v3_18_1_1_1504721330192_835 {
+    margin-left: 1em;
+    margin-top: -2em;
+    padding-top: 0;
+}
