@@ -1,15 +1,9 @@
 body {
     font-family: Source Sans Pro, Tahoma, sans-serif;
-    font-size: 200%;
 }
 
 .ddl-form-basic-info {
     max-width: 660px;
-    margin: 0 auto;
-}
-
-.container-fluid-1280.ddl-form-builder-app {
-    max-width: 660px;
-    margin-top: 40vh;
+    margin: 40vh auto 0;
     text-align: center;
 }
