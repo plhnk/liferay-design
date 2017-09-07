@@ -4,7 +4,7 @@ body {
 
 .ddl-form-basic-info {
     max-width: 660px;
-    margin: 40vh auto 0;
+    margin: 35vh auto 0;
     text-align: center;
 }
 
@@ -12,6 +12,6 @@ small em {
 	color: #869cad;
 }
 
-h5 {
+h5.ddl-form-description {
     font-size: 18px;
 }
