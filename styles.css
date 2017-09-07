@@ -37,4 +37,15 @@ h5, label.control-label, label, .btn-lg {
 
 input[type="radio"], input[type="checkbox"] {
     margin-right: 0.25em;
+    font-size: .8em;
+    vertical-align: .05em;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"] {
+    height: 12px;
+    width: 12px;
+}
+
+.clearfix.radio.radio-options {
+    margin-top: 4px;
 }
