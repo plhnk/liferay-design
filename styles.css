@@ -18,10 +18,23 @@ body {
 }
 
 .btn.btn-lg.btn-primary.lfr-ddm-form-submit.pull-right {
+    font-weight: 600;
     width: 100%;
 }
 
 .lfr-ddm-form-page .row:nth-child(5) .lfr-ddm-form-field-container {
     margin: -2em 0 0 1em;
     padding-top: 0;
+}
+
+h5, label.control-label, label, .btn-lg {
+    font-size: 18px;
+}
+
+.checkbox-default, .radio label {
+    font-size: 16px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 0.25em;
 }
