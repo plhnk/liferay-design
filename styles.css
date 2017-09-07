@@ -35,6 +35,10 @@ h5, label.control-label, label, .btn-lg {
     font-size: 16px;
 }
 
+.liferay-ddm-form-field-tip {
+    font-size: 14px;
+}
+
 input[type="radio"], input[type="checkbox"] {
     margin-right: 0.25em;
     font-size: .8em;
