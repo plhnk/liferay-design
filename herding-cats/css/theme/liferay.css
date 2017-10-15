@@ -424,13 +424,13 @@ ul.image-bullets > li:before {
   left: -.2em; }
 
 li#ga:before {
-  background-image: url(/images/logo_ga.png); }
+  background-image: url(images/logo_ga.png); }
 
 li#hj:before {
-  background-image: url(/images/logo_hj.png); }
+  background-image: url(images/logo_hj.png); }
 
 li#lf:before {
-  background-image: url(/images/logo_forms.png); }
+  background-image: url(images/logo_forms.png); }
 
 .reveal .window-shadow {
   border-radius: 4px;
