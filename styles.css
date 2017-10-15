@@ -7,9 +7,9 @@ body {
     margin: 0 auto;
 }
 
-.container-fluid-1280.ddl-form-builder-app {
+.container-fluid-1280 /*.ddl-form-builder-app*/ {
     max-width: 660px;
-    padding-bottom: 30vh;
+  	/*padding-bottom: 30vh;*/
 }
 
 .icon-asterisk.text-warning {
@@ -22,10 +22,13 @@ body {
     width: 100%;
 }
 
-.lfr-ddm-form-page .row:nth-child(5) .lfr-ddm-form-field-container {
+
+/* Customization for Liferay Navigation Survey to indent "other" field*/
+.lfr-ddm-form-page .row:nth-child(7) .lfr-ddm-form-field-container {
     margin: -2em 0 0 1em;
     padding-top: 0;
 }
+/* End Customization */
 
 h5, label.control-label, label, .btn-lg {
     font-size: 18px;
