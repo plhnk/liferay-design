@@ -153,7 +153,7 @@
 			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
 			// Parallax background image
-			parallaxBackgroundImage: '/images/bg-parallax.png', // CSS syntax, e.g. "a.jpg"
+			parallaxBackgroundImage: 'herding-cats/images/bg-parallax.png', // CSS syntax, e.g. "a.jpg"
 
 			// Parallax background size
 			parallaxBackgroundSize: '2801px 1080px', // CSS syntax, e.g. "3000px 2000px"

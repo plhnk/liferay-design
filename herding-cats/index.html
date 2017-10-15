@@ -17,7 +17,7 @@
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/herding-cats/css/print/pdf.css' : '/herding-cats/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
@@ -54,13 +54,13 @@
 						</aside>
 					</section>
 
-					<section data-background-color="#FFF" data-background-video="/videos/product-page-opt.mp4" data-background-video-loop data-background-video-muted>
+					<section data-background-color="#FFF" data-background-video="/herding-cats/videos/product-page-opt.mp4" data-background-video-loop data-background-video-muted>
 						<aside class="notes">
 							and hopefully all of you have seen this page ...if you have a good internet connection and modern browser :grimacing: — it's our product page today— but I'm not here today to say that you need to remove all your text and make your pages really pretty...
 						</aside>
 					</section>
 
-					<section data-background-color="#FFF" data-background-video="/videos/partners-page-opt.mp4" data-background-video-loop data-background-video-muted>
+					<section data-background-color="#FFF" data-background-video="/herding-cats/videos/partners-page-opt.mp4" data-background-video-loop data-background-video-muted>
 						<aside class="notes">
 							because... our current Partner's page looks nice... but its not very well _designed_
 						</aside>
@@ -237,7 +237,7 @@
 							so they provided the Vision — so while marketing started to research and write about the industrial application of Liferay, on the design side were already able to begin thinking and developing the components and styles we wanted to use, we were able to work with marketing as they developed the content. because we were have a component library, we're able to develop really quickly I believe we did all 6 of them in a single sprint — so in addition to accomplishing the vision, we were able to do it in a really cost-effective way.
 						</aside>
 					</section>
-					<section data-background-color="#FFF" data-background-video="/videos/solutions-insurance-page-opt.mp4" data-background-video-loop data-background-video-muted>
+					<section data-background-color="#FFF" data-background-video="/herding-cats/videos/solutions-insurance-page-opt.mp4" data-background-video-loop data-background-video-muted>
 						<aside class="notes">
 							This is the page for the Insurance Industry — the most effective "Solutions" pages
 						</aside>
@@ -265,12 +265,12 @@
 							and no, i'm not trying to pass my statements off as ancient wisdowm — this is definitely true when it comes to mockups, beautiful mockups can hide a host of design flaws
 						</aside>
 					</section>
-					<section data-background-color="#FFF" data-background-video="/videos/resources-mockup-opt.mp4" data-background-video-loop data-background-video-muted>
+					<section data-background-color="#FFF" data-background-video="/herding-cats/videos/resources-mockup-opt.mp4" data-background-video-loop data-background-video-muted>
 						<aside class="notes">
 							an example can be found in the resources update we did a year (or so) ago — this is the mockup, debately nice looking — got the thumbs up from stakeholders and into development
 						</aside>
 					</section>
-					<section data-background-color="#FFF" data-background-video="/videos/resources-live-opt.mp4" data-background-video-loop data-background-video-muted>
+					<section data-background-color="#FFF" data-background-video="/herding-cats/videos/resources-live-opt.mp4" data-background-video-loop data-background-video-muted>
 						<aside class="notes">
 							here's the page now live on our site — almost immediately we noticed a decrease in the number of form submissions — why? well, our guess is that people don't really have a clear understanding of what to do, they're overwhelmed by all these logos and tiles, and the sorting/filtering isn't very user-friendly, a lot of mistakes that we made in design, that were never really caught because the mockups "looked great" — unfortunately we timed the page update to an upgrade of our instance, so we couldn't exactly revert...so now we're redoing it! but this time, we'll be reviewing wireframes with the stakeholders first so that we can eliminate these usability issues
 						</aside>
@@ -512,8 +512,8 @@
 			<a id="logo" href="https://liferay.com/northamerica2017"><svg xmlns="http://www.w3.org/2000/svg" viewBox="8 8 48 50" height="50" width="48" ><path d="M39.084 8.051H8v21h4v-17h25.443L52 26.215v27.836H12v-13h14v8h3.676L45 35.465v-4.232L29.768 17.051H26v12h4v-7.114l10.713 10.74L30 43.626v-7.575H8v22h48v-33.61L39.084 8.051z"/></svg></a>	
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="/herding-cats/lib/js/head.min.js"></script>
+		<script src="/herding-cats/js/reveal.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -521,10 +521,10 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: '/herding-cats/plugin/markdown/marked.js' },
+					{ src: '/herding-cats/plugin/markdown/markdown.js' },
+					{ src: '/herding-cats/plugin/notes/notes.js', async: true },
+					{ src: '/herding-cats/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 		</script>
