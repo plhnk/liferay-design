@@ -435,3 +435,6 @@ li#lf:before {
 .reveal .window-shadow {
   border-radius: 4px;
   box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.4), 0 0 1em rgba(0, 0, 0, 0.04); }
+
+.reveal ol ol {
+  list-style-type: lower-roman; }
