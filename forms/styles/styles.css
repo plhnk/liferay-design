@@ -23,7 +23,7 @@ body {
 }
 
 
-/* Customization for Liferay Navigation Survey to indent "other" field*/
+/* Customization for Liferay Navigation Survey to indent "other" field
 .lfr-ddm-form-page .row:nth-child(7) .lfr-ddm-form-field-container {
     margin: -2em 0 0 1em;
     padding-top: 0;
