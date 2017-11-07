@@ -1,0 +1,232 @@
+/**
+ * Liferay theme for reveal.js.
+ *
+ * Copyright (C) Paul Hanaoka, http://hanaoka.co
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,600,600i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #4e4e50;
+$darkColor: #04111A;
+$lightColor: #e0e0e0;
+$mainFont: Lato, 'Source Sans Pro', sans-serif;
+$headingColor: #4e4e50;
+$headingFont: Lato, 'Source Sans Pro', sans-serif;
+$headingFontWeight: 300;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #FFF;
+$linkColor: #0b4166;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #0b4166;
+$grey: #e0e0e0;
+
+$heading1Size: 6vmax;
+$heading2Size: 4vmax;
+$heading3Size: 2.5vmax;
+$heading4Size: 1.5vmax;
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( RGBA(239, 239, 241, 1.00), RGBA(229, 231, 230, 1.00) );
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Page Customizations
+
+body {
+	font-family: Lato, 'Source Sans Pro', sans-serif;
+}
+
+#footer {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 2vw;
+	position: absolute;
+	width: 96vw;
+}
+
+#footer a {
+	fill: $mainColor;
+	color: $mainColor;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	opacity: 0.7;
+}
+
+.reveal section .thin-text {
+	font-weight: 300;
+}
+
+.dark-text {
+	color: $darkColor;
+}
+
+section.has-dark-background h1, 
+section.has-dark-background h2, 
+section.has-dark-background h3, 
+section.has-dark-background h4, 
+section.has-dark-background h5, 
+section.has-dark-background h6, 
+section.has-dark-background p,
+section.has-dark-background ul,
+section.has-dark-background ol, 
+section.has-dark-background div {
+	color: $lightColor;
+}
+
+.reveal .controls {
+	mix-blend-mode: multiply;
+	opacity: 0.1;
+}
+
+section {
+	text-align: left;
+}
+
+section.center {
+	text-align: center;
+}
+
+.reveal blockquote {
+	background: none;
+	box-shadow: none;
+	text-align: center;
+	/* &:after {
+			content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 2000 1600' ><path vector-effect='non-scaling-stroke' fill='none' stroke='#fff' stroke-miterlimit='10' stroke-width='2' d='M0 1h1870l129 129V1600'/></svg>");
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100vw;
+			height: 100vh;
+		} */
+}
+
+.reveal section img {
+	margin: 0;
+	background: none; 
+	border: none;
+	box-shadow: none;
+	max-height: 85vh;
+	max-width: 100%;
+}
+
+.has-dark-background ~ #footer a {
+	fill: $grey;
+	color: $grey;
+}
+
+.has-dark-background ~ #footer svg.stroke-ldsf {
+	stroke: $grey;
+}
+
+twitterwidget {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reveal a.unsplash-credit {
+	background-color:black;
+	color:white;
+	text-decoration:none;
+	padding:4px 6px;
+	font-family:-apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	line-height:1.2;
+	display:inline-block;
+	border-radius:3px;
+}
+
+section.center.future a.unsplash-credit {
+	transition: transform 0.5s ease, opacity 1s ease 0.5s;
+	transform: translate(0,0);
+	opacity: 0;
+}
+
+section.center.present a.unsplash-credit {
+	transition: transform 0.5s ease, opacity 1s ease 0.5s;
+	transform: translate(40vw, -47vh);
+	opacity: 0.4;
+}
+
+section.center.past a.unsplash-credit {
+	transition: transform 0.5s ease, opacity 1s ease 0.5s;
+	transform: translate(0vw, -47vh);
+	opacity: 0.4;
+}
+
+.reveal .small-caps {
+	color: $mainColor;
+	margin: 0;
+	font-size: 40%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	opacity: 0.8;
+}
+
+.reveal .slides section .fragment.visible:not(.current-fragment) {
+	opacity: 0.4;
+}
+
+ul.image-bullets {
+	list-style-type: none;
+}
+
+ul.image-bullets > li {
+	&:before {
+		position: absolute;
+		height: 1em;
+		width: 1em;
+		content: "";
+		background-size: cover;
+		left: -.2em;
+	}
+}
+
+li#ga {
+	&:before {
+		background-image: url(/images/logo_ga.png);
+	}
+}
+
+
+li#hj {
+	&:before {
+		background-image: url(/images/logo_hj.png);
+	}
+}
+
+li#lf {
+	&:before {
+		background-image: url(/images/logo_forms.png);
+	}
+}
+
+.reveal .window-shadow {
+	border-radius: 4px;
+	box-shadow: 0 0.5em 1em -0.5em rgba(0,0,0,0.4), 0 0 1em rgba(0,0,0,0.04);
+}
+
+.reveal ol ol {
+	list-style-type: lower-roman;
+}
