@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>It works!</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,700">
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
 	<link rel="stylesheet" href="/styles.css">
 	<style>
 	body {
-	    background: #0e141a;
-	    font-family: 'Open Sans', sans-serif;
+		background: #0055FD;
+		font-family: 'Source Code Pro', monospace;
 	}
 	.container {
 		position: absolute;
@@ -18,10 +19,8 @@
 		text-align: center;
 	}
 	h1 {
-		font-size: 72px;
-		font-weight: 700;
-		color: #00d46a;
-		margin: 0;
+		font-size: 3.2em;
+		font-weight: 500;
 	}
 	h2 {
 		font-weight: 300;
@@ -34,14 +33,114 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
+	.light-text {
+		color: #fff;
+	}
+
+	.sub-header {
+		font-size: .6em;
+		font-weight: 300;
+	}
+
+	.hero-image {
+		background: url('assets/images/hero-ryan.jpg') center/cover;
+		box-shadow: 0 17px 50px 0 #003A97;
+		height: 90vh;
+		max-width: 612px;
+		margin-top: 4vh;
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+
+	nav ul {
+		list-style-type: none;
+		display: inline;
+	}
+
+	nav li {
+		display: inline;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(12, [col-start] 1fr);
+		grid-gap: 2em;
+		max-width: 1248px;
+		margin: 0 auto;
+		height: 100vh;
+	}
+
+	.banner.wrapper {
+		grid-column: col-start 3 / span 8;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: display;
+	}
+
+	.banner-copy {
+		width: 100%;
+	}
+
+	.vertical-text {
+		transform: rotate(-90deg);
+		text-align: center;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		height: 1em;
+		top: 46%;
+	}
+
+	.white {
+		background: #fff;
+	}
+
 	</style>
 </head>
 <body>
-	<div class="container">
-		<h1>Your site is live!</h1>
-		<h2>Go grab a cold <strike>lemonade</strike> beer and celebrate.</h2>
+	<header class="light-text">
+		<div class="wrapper">
+			<nav>
+				<a href="/" class="site-title">Liferay.Design</a>
+				<ul>
+					<li>
+						<a href="#Venue" class="site-nav_link">Venue</a>
+					</li>
+					<li>
+						<a href="#Agenda" class="site-nav_link">Agenda</a>
+					</li>
+					<li>
+						<a href="#Team" class="site-nav_link">Team</a>
+					</li>						
+			</nav>
+			<div class="top grid">
+				<div class="banner wrapper">
+					<div class="banner-copy">
+						<p class="description">Event</p>
+						<h1>Design Week <br> <span class="sub-header">Los Angeles, CA</span></h1>
+						<p class="vertical-text">2018</p>
+					</div>
+					<div class="hero-image"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="grid full-width">
+		<section>	
+			<div>
+				<h2>Venue</h2>
+			</div>
+			<div>
+				<h3>Liferay Headquarters</h3>
+				<p>1400 Montefino Ave Diamond Bar, CA 91765</p>
+				<p>Jan 22 – Jan 26</p>
+				<a href="#">directions</a>
+			</div>
+		</section>
 	</div>
-
-	<img class="logo" src="https://cloud.githubusercontent.com/assets/398893/16279177/af9b3622-386e-11e6-920e-3a3f33169831.png" width="150" alt="WeDeploy">
 </body>
 </html>
