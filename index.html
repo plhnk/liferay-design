@@ -9,6 +9,11 @@
 	<style>
 	body {
 		background: #0055FD;
+		background-image: url('assets/images/diamond-bar-topography.png');
+		background-position: top;
+		background-attachment: fixed;
+		background-size: cover;
+		background-blend-mode: multiply;
 		font-family: 'Source Code Pro', monospace;
 	}
 	.container {
@@ -44,23 +49,74 @@
 	}
 
 	.hero-image {
-		background: url('assets/images/hero-ryan.jpg') center/cover;
+
+		background: url('assets/images/hero-ryan.jpg') center/cover fixed;
 		box-shadow: 0 17px 50px 0 #003A97;
-		height: 90vh;
+		height: 680px;
 		max-width: 612px;
-		margin-top: 4vh;
 		position: absolute;
 		width: 100%;
 		z-index: -1;
+		top: 4vh;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 3em;
 	}
 
 	nav ul {
 		list-style-type: none;
 		display: inline;
+		padding-left: 0;
+		margin: 0 14ch 0 0;
 	}
 
 	nav li {
+		display: inline-block;
+		padding: .3em 2ch;
+	}
+
+	nav li  a {
 		display: inline;
+		color: #fff;
+		opacity: 0.6;
+		transition: opacity .4s;
+	}
+
+	nav li a:after {
+		background: #212020;
+		content: '';
+		display: block;
+		height: 1px;
+		margin-top: .5em;
+		transition: width .4s ease;
+		width: 0%;
+	}
+
+	nav li a:hover {
+		opacity: 1;
+		transition: opacity .2s;
+	}
+
+	nav li a:hover:after {
+		transition: width .2s ease;
+		width: 100%;
+	}
+
+	nav a {
+		align-content: center;
+		text-decoration: none;
+	}
+
+	#site-home {
+		color: #fff;
+		font-size: 1.5em;
+	}
+
+	#menu {
+		opacity: 0;
 	}
 
 	.grid {
@@ -99,13 +155,33 @@
 		background: #fff;
 	}
 
+	.description {
+		color: #212020;
+	}
+
+	.description:after {
+		content: '';
+		display: block;
+		background: #212020;
+		height: 1px;
+		margin-top: .5em;
+		width: 2ch;
+	}
+
+	.small-caps {
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 0.8em;
+	}
+
 	</style>
 </head>
 <body>
 	<header class="light-text">
 		<div class="wrapper">
 			<nav>
-				<a href="/" class="site-title">Liferay.Design</a>
+				<a href="/" id="site-home" class="site-nav_link">Liferay.Design</a>
 				<ul>
 					<li>
 						<a href="#Venue" class="site-nav_link">Venue</a>
@@ -115,12 +191,14 @@
 					</li>
 					<li>
 						<a href="#Team" class="site-nav_link">Team</a>
-					</li>						
+					</li>	
+				</ul>
+				<div id="menu">Menu</div>
 			</nav>
 			<div class="top grid">
 				<div class="banner wrapper">
 					<div class="banner-copy">
-						<p class="description">Event</p>
+						<p class="description small-caps">Event</p>
 						<h1>Design Week <br> <span class="sub-header">Los Angeles, CA</span></h1>
 						<p class="vertical-text">2018</p>
 					</div>
@@ -132,7 +210,7 @@
 	<div class="grid full-width">
 		<section>	
 			<div>
-				<h2>Venue</h2>
+				<h2 class="description">Venue</h2>
 			</div>
 			<div>
 				<h3>Liferay Headquarters</h3>
