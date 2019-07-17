@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: Content
+  label: Content (Markdown)
 - type: directory
   path: src/markdown/articles
   label: Articles
@@ -26,6 +26,8 @@ sections:
   label: Events
   create: all
   match: "**/*"
+- type: heading
+  label: Pages (Javascript)
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
